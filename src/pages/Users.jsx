@@ -9,7 +9,7 @@ export default function Users() {
     const fetchUsers = async () => {
       try {
         const token = localStorage.getItem("token"); // JWT from login
-        const res = await axios.get("https://calendarbackend-ppif.onrender.com/api/users", {
+        const res = await axios.get("https://calendarbackendnew.onrender.com/api/users", {
           headers: { Authorization: `Bearer ${token}` }
         });
 

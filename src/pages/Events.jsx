@@ -12,7 +12,7 @@ export default function Events() {
     const fetchRemarks = async () => {
       try {
         const token = localStorage.getItem("token"); // admin token
-        const res = await axios.get("https://calendarbackend-ppif.onrender.com/api/remarks/admin/all", {
+        const res = await axios.get("https://calendarbackendnew.onrender.com/api/remarks/admin/all", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

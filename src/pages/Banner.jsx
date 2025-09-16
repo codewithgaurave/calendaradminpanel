@@ -7,7 +7,7 @@ export default function Banner() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [preview, setPreview] = useState(null);
 
-  const API_URL = "https://calendarbackend-ppif.onrender.com/api/banners";
+  const API_URL = "https://calendarbackendnew.onrender.com/api/banners";
 
   // ✅ Fetch banners on mount
   useEffect(() => {
@@ -92,7 +92,7 @@ export default function Banner() {
               className="relative bg-white shadow rounded-lg overflow-hidden"
             >
               <img
-                src={`https://calendarbackend-ppif.onrender.com${banner.imageUrl}`} // ✅ Serve from backend
+                src={`https://calendarbackendnew.onrender.com${banner.imageUrl}`} // ✅ Serve from backend
                 alt={banner.name}
                 className="w-full h-40 object-cover"
               />
